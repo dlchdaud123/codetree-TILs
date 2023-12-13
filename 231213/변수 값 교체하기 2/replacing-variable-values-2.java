@@ -3,9 +3,9 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         int a = 5;
         int b = 3;
-        b = a;
-        System.out.print(a);
-                System.out.print(b);
+        a = b;
+        System.out.println(a);
+        System.out.print(b);
 
     }
 }
