@@ -6,6 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.printf("%d %d %d",a,b,a+b);
+        System.out.print(a+" "+b+" "+(a+b));
     }
 }
