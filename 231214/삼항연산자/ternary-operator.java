@@ -5,8 +5,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int score = sc.nextInt();
-        String grade = score == 100 ? "pass" : "failure";
 
-        System.out.print(grade);
+        System.out.print(score == 100 ? "pass" : "failure");
     }
 }
