@@ -16,7 +16,8 @@ public class Main {
             minimum = c;
         }
         
-        System.out.print(a == minimum ? 1 : 0+" ");
+        System.out.print(a == minimum ? 1 : 0);
+        System.out.print(" ");
         System.out.print(a == b && b == c ? 1 : 0);
     }
 }
