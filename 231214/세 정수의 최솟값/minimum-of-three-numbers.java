@@ -10,10 +10,10 @@ public class Main {
 
         int minimum = a;
 
-        if(a > b){
+        if(minimum > b){
             minimum = b;
         }
-        if(a > c){
+        if(minimum > c){
             minimum = c;
         }
         System.out.print(minimum);
