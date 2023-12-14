@@ -6,13 +6,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         if(n % 2 == 1 || n % 3 == 0){
-            System.out.print("True");
+            System.out.print("true");
         }
         else if(n % 2 == 0 || n % 5 == 0){
-            System.out.print("True");
+            System.out.print("true");
         }
         else 
-            System.out.print("False");
+            System.out.print("false");
 
     }
 }
