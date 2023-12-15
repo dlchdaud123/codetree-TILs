@@ -11,15 +11,14 @@ public class Main {
 
         int mid = a; // 3 1 5 
                      // 3 5 1
-        if(a > b && a > c) {
-            if(c < b){
+        if(a > b && b > c) {
+
                 mid = b; // 5 3 1 
-            }
         }
-        else if(a < b && a < c) {
-            if(c < b){
+        else if(a > c && c > b) {
+
                 mid = c; // 1 5 3
-            }
+
         }
         System.out.print(mid);
     }
