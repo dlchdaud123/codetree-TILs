@@ -11,57 +11,74 @@ public class Main {
         char c_yn = sc.next().charAt(0);
         int c_tp = sc.nextInt();
 
+        char state_a;
+        char state_b;
+        char state_c;
+
         
 
         if(a_yn == 'Y'){
             if(a_tp >= 37){
-                System.out.println('A');
+                state_a = 'A';
             }
             else{
-                System.out.println('C');
+                state_a = 'C';
             }
         }
         else{
             if(a_tp >= 37){
-                System.out.println('B');
+                state_a = 'B';
             }
             else{
-                System.out.println('D');
+                state_a = 'D';
             }
         }
 
         if(b_yn == 'Y'){
             if(b_tp >= 37){
-                System.out.println('A');
+                state_b = 'A';
             }
             else{
-                System.out.println('C');
+                state_b = 'C';
             }
         }
         else{
             if(b_tp >= 37){
-                System.out.println('B');
+                state_b = 'B';
             }
             else{
-                System.out.println('D');
+                state_b = 'D';
             }
         }
 
         if(c_yn == 'Y'){
             if(c_tp >= 37){
-                System.out.println('A');
+                state_c = 'A';
             }
             else{
-                System.out.println('C');
+                state_c = 'C';
             }
         }
         else{
             if(c_tp >= 37){
-                System.out.println('B');
+                state_c = 'B';
             }
             else{
-                System.out.println('D');
+                state_c = 'D';
             }
+        }
+
+        if((state_a == 'A' && state_b == 'A' && state_c == 'A') 
+        || (state_a == 'A' && state_b == 'A') 
+        || (state_b == 'A' && state_c == 'A')
+        || (state_a == 'A' && state_c == 'A')) {
+            System.out.print('E');
+        }
+        else{
+            System.out.println(state_a);
+            System.out.println(state_b);
+            System.out.println(state_c);
+
         }
     }
 }
