@@ -20,7 +20,7 @@ public class Main {
                 System.out.print("BOY");
             }
             else{
-                System.out.print("Girl");
+                System.out.print("GIRL");
             }
         }
     }
