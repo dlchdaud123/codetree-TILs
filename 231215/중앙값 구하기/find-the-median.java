@@ -9,16 +9,15 @@ public class Main {
         int c = sc.nextInt();
         
 
-        int mid = a; // 3 1 5 
-                     // 3 5 1
-        if(a > b && b > c) {
-
-                mid = b; // 5 3 1 
+        int mid = 0; 
+        if((b > a && a > c) || (c > a && a > b)){
+            mid = a;
         }
-        else if(a > c && c > b) {
-
-                mid = c; // 1 5 3
-
+        else if((a > b && b > c )|| (c > b && b > a)) {
+            mid = b; // 5 3 1 
+        }
+        else{
+            mid = c; // 1 5 3
         }
         System.out.print(mid);
     }
