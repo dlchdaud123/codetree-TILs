@@ -75,9 +75,8 @@ public class Main {
             System.out.print('E');
         }
         else{
-            System.out.println(state_a);
-            System.out.println(state_b);
-            System.out.println(state_c);
+            System.out.print('N');
+
 
         }
     }
