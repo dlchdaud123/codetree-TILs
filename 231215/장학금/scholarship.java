@@ -8,10 +8,10 @@ public class Main {
         int Fin_Score = sc.nextInt();
 
         if(90 <= Mid_Score && 95 <= Fin_Score){
-            System.out.print(10);
+            System.out.print(100000);
         }
         else if(90 <= Mid_Score && 90 <= Fin_Score){
-            System.out.print(5);
+            System.out.print(50000);
         }
         else{
             System.out.print(0);
