@@ -9,13 +9,14 @@ public class Main {
         int c = sc.nextInt();
         
 
-        int mid = a;
+        int mid = a; // 3 1 5 
+                     // 3 5 1
         if(a > b && a > c) {
             if(c < b){
                 mid = b; // 5 3 1 
             }
         }
-        if(a < b && a < c) {
+        else if(a < b && a < c) {
             if(c < b){
                 mid = c; // 1 5 3
             }
