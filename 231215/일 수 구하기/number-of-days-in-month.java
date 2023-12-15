@@ -11,8 +11,8 @@ public class Main {
             
 
         }
-        
-        if(n % 2 == 0){
+
+        else if(n % 2 == 0){
             System.out.print(30);
         }
         else
