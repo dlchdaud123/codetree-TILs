@@ -13,7 +13,7 @@ public class Main {
             }
         }
         else if(c == 'D'){
-            for(int j = n; j >= 0; j--){
+            for(int j = n; j > 0; j--){
                 System.out.print(j+" ");
             }
         }
