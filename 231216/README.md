@@ -4,11 +4,11 @@
 23년 12월 16일 목표(240px)까지 190px 남았습니다.
 
 ![50xp](https://img.shields.io/badge/EXP-50xp-%235cb85c.svg?for-the-badge)
-![5일째](https://img.shields.io/badge/연속학습-5일째-%23E34F26.svg?for-the-badge)
+![6일째](https://img.shields.io/badge/연속학습-6일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-6|50xp|5일째🔥|
+6|50xp|6일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
@@ -17,7 +17,7 @@
 |[Novice Low / 단순 반복문 / while문 b → a 1씩 감소](https://www.codetree.ai/missions?missionId=4)|[[테스트]짝수만 출력 2](https://www.codetree.ai/missions/4/problems/output-only-even-2)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/dlchdaud123/codetree-TILs/blob/main/231216/%EC%A7%9D%EC%88%98%EB%A7%8C%20%EC%B6%9C%EB%A0%A5%202/output-only-even-2.java)|
 |[Novice Low / 단순 반복문 / n번 반복하기](https://www.codetree.ai/missions?missionId=4)|[[개념]문자 출력하기](https://www.codetree.ai/missions/4/problems/print-text)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/dlchdaud123/codetree-TILs/blob/main/231216/%EB%AC%B8%EC%9E%90%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/print-text.java)|
 |[Novice Low / 단순 반복문 / n번 반복하기](https://www.codetree.ai/missions?missionId=4)|[[연습]문자열 출력하기](https://www.codetree.ai/missions/4/problems/print-string)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/dlchdaud123/codetree-TILs/blob/main/231216/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/print-string.java)|
-|[Novice Low / 단순 반복문 / n번 반복하기](https://www.codetree.ai/missions?missionId=4)|[[연습]a/b 출력](https://www.codetree.ai/missions/4/problems/a-divide-b)|![어려움][hard]|![Failed][failed]|[링크](https://github.com/dlchdaud123/codetree-TILs/blob/main/231216/a/b%20%EC%B6%9C%EB%A0%A5/a-divide-b.java)|
+|[Novice Low / 단순 반복문 / n번 반복하기](https://www.codetree.ai/missions?missionId=4)|[[연습]a/b 출력](https://www.codetree.ai/missions/4/problems/a-divide-b)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/dlchdaud123/codetree-TILs/blob/main/231216/a/b%20%EC%B6%9C%EB%A0%A5/a-divide-b.java)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
