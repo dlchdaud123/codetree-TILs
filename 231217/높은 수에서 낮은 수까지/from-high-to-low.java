@@ -7,14 +7,15 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        int max = a;
-        int min = b;
-        if(b > a){
-            max = b;
-            min = a;
+        if(b >= a){
+            for(int i = b; i >= a; i--){
+                System.out.print(i+" ");
+            }
         }
-        for(int i = max; i >= min; i--){
-            System.out.print(i+" ");
+        else{
+            for(int i = a; i >= b; i--){
+                System.out.print(i+" ");
+            }
         }
     }
 }
