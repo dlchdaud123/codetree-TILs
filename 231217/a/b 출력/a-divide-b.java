@@ -8,6 +8,7 @@ public class Main {
         int b = sc.nextInt();
         int tem = a;
         System.out.print((a/b)+".");
+            tem = (tem - (b*(tem / b)));
         // ex) 7(a) / 8(b)
         for(int i = 0; i < 20; i++){
             tem *= 10;
