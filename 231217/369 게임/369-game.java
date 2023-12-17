@@ -15,7 +15,7 @@ public class Main {
                 System.out.print(i+" ");
 
             }
-            if(i % 10 == 0){
+            else if(i % 10 == 0){
                 System.out.print(i+" ");
             }
             else if(i > 10){ // n이 두자리 수
