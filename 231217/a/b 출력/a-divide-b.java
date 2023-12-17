@@ -6,7 +6,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int tem = a;
+        System.out.print((a/b)+".");
+        // ex) 7(a) / 8(b)
+        for(int i = 0; i < 20; i++){
+            tem *= 10;
+            System.out.print(tem / b);
+            tem = (tem - (b*(tem / b)));
 
-        System.out.printf("%.20f", (double)a/(double)b);
+        }
+       
     }
+    //a = 7, b = 8 
+    //tem = 70 
+    //70 = (70 - (8*(70 / 8))
 }
