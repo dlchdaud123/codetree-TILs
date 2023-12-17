@@ -10,17 +10,20 @@ public class Main {
             if(i % 3 == 0){
                 System.out.print(0+" ");
             }
-            else if((i / 10) % 3 == 0){
-                System.out.print(0+" ");
-            }            
-            else if((i % 10) % 3 == 0){
-                System.out.print(0+" ");
+            else if(i % 10 == 0){
+                System.out.print(i+" ");
             }
-
-            // 최대는 99 십의 자리 몫이 3의 배수거나 
-            // (i / 10) % 3 == 0
-            // 일의 자리 몫이 3의 배수
-            // (i % 10) % 3 == 0
+            else if(i > 10){
+                if((i / 10) % 3 == 0){ 
+                    System.out.print(0+" ");
+                }            
+                else if((i % 10) % 3 == 0){
+                    System.out.print(0+" ");
+                }
+            }
+            else{
+                System.out.print(i+" ");
+            }
         }
 
     }
