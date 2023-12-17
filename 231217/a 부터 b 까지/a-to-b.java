@@ -9,8 +9,6 @@ public class Main {
         System.out.print(a+" ");
         while(a < b){
 
-            
-
             if(a % 2 == 1){
                 a *= 2;
                 System.out.print(a+" ");
