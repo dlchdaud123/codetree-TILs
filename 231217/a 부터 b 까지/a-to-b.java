@@ -6,17 +6,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.print(a+" ");
-        for(int i = a; i < b; i+=0){
+        
+        int i = a;
+        System.out.print(i+" ");
 
+        while(i < b){
             if(i % 2 == 1){
                 i *= 2;
-                System.out.print(i+" ");
             }
             else{
                 i += 3;
-                System.out.print(i+" ");
             }
+            System.out.print(i+" ");
+
         }
     }
 }
