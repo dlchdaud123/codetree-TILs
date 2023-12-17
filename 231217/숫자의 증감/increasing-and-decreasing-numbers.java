@@ -8,13 +8,13 @@ public class Main {
         int n = sc.nextInt();
 
         if(c == 'A'){
-            for(int i = 0; i < n; i++){
-                System.out.print(i+1+" ");
+            for(int i = 1; i <= n; i++){
+                System.out.print(i+" ");
             }
         }
         else if(c == 'D'){
-            for(int j = n; j > -1; j--){
-                System.out.print(j+1+" ");
+            for(int j = n; j >= 0; j--){
+                System.out.print(j+" ");
             }
         }
 
