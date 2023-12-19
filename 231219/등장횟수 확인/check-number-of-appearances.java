@@ -8,8 +8,10 @@ public class Main {
         int cnt = 0;
 
         for(int i = 1; i <= 5; i++){
+
             int n = sc.nextInt();
-            if(i % 2 == 0){
+            
+            if(n % 2 == 0){
                 cnt++;
             }
         }
