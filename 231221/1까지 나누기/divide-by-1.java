@@ -14,9 +14,8 @@ public class Main {
             cnt++;
             //System.out.println("cnt = "+cnt);
 
-            if(n/i <= 1){
+            if(n <= 1){
                 //System.out.println("n/i <= 1");
-                cnt++;
                 //System.out.println("cnt = "+cnt);
                 System.out.println(+cnt);
                 break;
