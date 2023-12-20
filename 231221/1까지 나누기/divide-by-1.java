@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int cnt = 0;
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= 5000; i++){
             //System.out.println("i = "+i);
             //System.out.println("n = "+n);
             n /= i;
