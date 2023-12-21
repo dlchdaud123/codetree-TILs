@@ -17,7 +17,7 @@ public class Main {
             }
             
         }
-        System.out.print(satisfied == true ? "Yes" : "No");
+        System.out.print(satisfied == true ? "YES" : "NO");
 
 
     }
