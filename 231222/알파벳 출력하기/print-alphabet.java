@@ -13,6 +13,9 @@ public class Main {
                     System.out.print(a);
                     a++;
                 }
+                if((int)a > 'Z'){
+                    a = 'A';
+                }
             }
             System.out.println();
         }
