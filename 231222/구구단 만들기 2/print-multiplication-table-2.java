@@ -7,9 +7,9 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        for(int i = a; i <= b+1; i++){
+        for(int i = 1; i <= 4; i++){
             for(int j = b; j >= a; j--){
-                System.out.print(j+" * "+2*(i-1)+" = "+(j*2*(i-1)));
+                System.out.print(j+" * "+2*i+" = "+(j*2*(i)));
                 if(j != a){
                     System.out.print(" / ");
                 }
