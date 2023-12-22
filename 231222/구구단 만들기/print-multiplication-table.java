@@ -8,10 +8,10 @@ public class Main {
         int b = sc.nextInt();
 
         for(int i = 1; i <= 9; i++){
-            for(int j = b; j >= 1; j--){
+            for(int j = b; j >= a; j--){
                 if(j % 2 == 0){
                     System.out.print(j+" * "+i+" = "+(i*j));
-                    if(j != 2){
+                    if(j != a){
                         System.out.print(" / ");
                     }
                 }
