@@ -13,7 +13,7 @@ public class Main {
             if(arr[i] == 0){
                 System.out.print(cnt+" "+sum);
             }
-            else if(arr[i] % 2 == 0){
+            else if(arr[i] % 2 == 0 || arr[i] > 0){
                 cnt++;
                 sum += arr[i];
                 if(cnt == 10){
