@@ -12,11 +12,13 @@ public class Main {
             arr[i] = sc.nextInt();
             if(arr[i] == 0){
                 System.out.print(cnt+" "+sum);
+                break;
             }
-            if(arr[i] % 2 == 0){
+            else if(arr[i] % 2 == 0){
                 cnt++;
                 sum += arr[i];
             }
-            }
         }
+        System.out.print(cnt+" "+sum);
     }
+}
