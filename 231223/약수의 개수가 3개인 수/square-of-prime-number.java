@@ -9,9 +9,9 @@ public class Main {
         int cnt = 0;
 
         for(int i = start; i <= end; i++){
-            int yak_gat = 0;
-            for(int j = 1; j < i; j++){
-                if(i % j == 0){
+            int yak_gat = 0; // 
+            for(int j = 1; j <= i; j++){
+                if(i % j == 0){ // 나눠 떨어지면 
                     yak_gat++;
                 }
             }
