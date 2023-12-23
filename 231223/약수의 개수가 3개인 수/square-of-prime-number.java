@@ -10,12 +10,13 @@ public class Main {
 
         for(int i = start; i <= end; i++){
             int yak_gat = 0;
-            for(int j = 1; j < end; j++){
+            for(int j = 1; j < i; j++){
                 if(i % j == 0){
                     yak_gat++;
                 }
             }
             if(yak_gat == 3){
+                //System.out.println("i="+i);
                 cnt++;
             }
         }
