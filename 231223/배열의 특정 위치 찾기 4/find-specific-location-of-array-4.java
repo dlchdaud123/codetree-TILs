@@ -24,7 +24,7 @@ public class Main {
             }
 
             if(cnt == 10){ // 0을 제외한 수가 10이면 2의 배수 정보가 출력 안됐으므로 따로 출력
-                    System.out.print(cnt+" "+sum);
+                    System.out.print(cnt_2+" "+sum); 
             }
         }
     }
