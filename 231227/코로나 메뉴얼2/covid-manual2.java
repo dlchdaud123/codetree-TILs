@@ -29,7 +29,7 @@ public class Main {
         for(int i = 0;i < 4; i++){
             System.out.print(hosp[i]+" ");
         }
-        if(temper[0] >= 2){
+        if(hosp[0] >= 2){
             System.out.print("E");
         }
         
