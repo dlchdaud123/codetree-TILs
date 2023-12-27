@@ -28,9 +28,8 @@ public class Main {
         }
         for(int i = 0;i < 4; i++){
             System.out.print(hosp[i]+" ");
-            emer += hosp[i];
         }
-        if(emer >= 2){
+        if(temper[0] >= 2){
             System.out.print("E");
         }
         
