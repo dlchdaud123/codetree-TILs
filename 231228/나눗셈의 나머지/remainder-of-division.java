@@ -9,13 +9,16 @@ public class Main {
         int na[] = new int[b];
         int sum = 0;
 
-        while(a >= 1){
+        for(int i = 0; i < 1000; i++){
             na[a % b]++;
             a = a / b;
+            if(a <= 1){
+                break;
+            }
         }
         for(int i = 0; i < b; i++){
             sum = sum + (na[i] * na[i]);
-            // System.out.println(sum);
+            System.out.println(sum);
         }
         System.out.print(sum);
     }
