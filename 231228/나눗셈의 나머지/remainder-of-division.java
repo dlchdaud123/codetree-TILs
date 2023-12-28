@@ -10,15 +10,15 @@ public class Main {
         int sum = 0;
 
         for(int i = 0; i < 1000; i++){
-            na[a % b]++;
-            a = a / b;
             if(a <= 1){
                 break;
             }
+            na[a % b]++;
+            a = a / b;
         }
         for(int i = 0; i < b; i++){
             sum = sum + (na[i] * na[i]);
-            System.out.println(sum);
+            // System.out.println(sum);
         }
         System.out.print(sum);
     }
