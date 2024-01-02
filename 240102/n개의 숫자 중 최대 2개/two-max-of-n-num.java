@@ -7,8 +7,8 @@ public class Main {
         int n = sc.nextInt();
         int arr[] = new int[n];
         int max_arr[] = new int[n];
-        int max = 0;
-        int max_sec = 0;
+        int max = arr[0];
+        int max_sec = arr[0];
         int cnt = 0;
         int max_idx = 0;
 
