@@ -13,8 +13,11 @@ public class Main {
             arr[i] = sc.nextInt();
             if(arr[i] < minVal){
                 minVal = arr[i];
-                cnt++;
             }
+        }
+        for(int i = 0; i < n; i++){
+            if(arr[i] == minVal)
+            cnt++;
         }
         System.out.print(minVal+" "+cnt);
     }
