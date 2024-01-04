@@ -5,8 +5,8 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int arr[] = new int[n];
-        int arr_idx[] = new int[100];
+        int arr[] = new int[1000];
+        int arr_idx[] = new int[1000];
         int max = -1;
         int max2 = 0;
         int idx = n;
