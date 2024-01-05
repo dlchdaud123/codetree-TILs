@@ -15,7 +15,7 @@ public class Main {
         minVal = arr[1] - arr[0];
 
         for(int i = 2; i < n; i++){
-            if(arr[i] - arr[i-1] < arr[i-1] - arr[i-2]){
+            if(arr[i] - arr[i-1] < minVal){
                 minVal = arr[i] - arr[i-1];
             }
         }
