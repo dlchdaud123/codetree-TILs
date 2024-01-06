@@ -6,19 +6,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int arr[][] = new int[n][n];
-        int num = 16;
+        int num = 1;
 
-        for(int j = 0; j < n; j++){
-            if(j % 2 == 0){
+        for(int j = n-1; j >= 0; j--){
+            if(j % 2 == 0){ // 
                 for(int i = n-1; i >= 0; i--){
                     arr[i][j] = num;
-                    num -= 1;
+                    num += 1;
                 }
             }
             else{
                 for(int i = 0; i < n; i++){
                     arr[i][j] = num;
-                    num -= 1;
+                    num += 1;
                 }
             }
         }
