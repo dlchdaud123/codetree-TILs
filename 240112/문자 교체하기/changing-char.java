@@ -9,7 +9,7 @@ public class Main {
         char arr2[] = str2.toCharArray();
 
         arr2[0] = arr1[0];
-        arr2[1] = arr1[2];
+        arr2[1] = arr1[1];
 
         str2 = String.valueOf(arr2);
         System.out.print(str2);
