@@ -7,8 +7,14 @@ public class Main {
         String str3 = str1+str2;
         String str4 = str2+str1;
 
+        boolean satisfied = true;
         
+        for(int i = 0; i < str3.length(); i++){
+            if(str3.charAt(i) != str4.charAt(i)){
+                satisfied = false;
+            }
+        }
+        System.out.print(satisfied);
 
-        System.out.println(str3.equals(str4));
     }
 }
