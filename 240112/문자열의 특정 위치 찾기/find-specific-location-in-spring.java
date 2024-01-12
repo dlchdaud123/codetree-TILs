@@ -7,6 +7,6 @@ public class Main {
         int idx = -1;
         idx = arr.indexOf(alp);
 
-        System.out.print(idx);
+        System.out.print(idx == -1 ? idx : "No");
     }
 }
