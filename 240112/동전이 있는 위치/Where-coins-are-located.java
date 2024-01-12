@@ -7,16 +7,16 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        int placed[][] = new int [3][3];
+        int placed[][] = new int [n][n];
 
-        for(int i = 1; i <= m; i++){
+        for(int i = 0; i < m; i++){
             int r = sc.nextInt();
             int c = sc.nextInt();
-            placed[r][c] = 1;
+            placed[r-1][c-1] = 1;
         }
 
-        for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= n; j++){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
                 System.out.print(placed[i][j]+" ");
             }
             System.out.println();
