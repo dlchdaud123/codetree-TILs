@@ -5,7 +5,7 @@ public class Main {
         String str = sc.next();
         int n = sc.nextInt();
 
-        for(int i = str.length()-1; i >= str.length()-11; i--){
+        for(int i = str.length()-1; i >= str.length()-n; i--){
             System.out.print(str.charAt(i));
 
         }
