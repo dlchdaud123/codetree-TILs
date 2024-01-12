@@ -9,7 +9,7 @@ public class Main {
 
         int placed[][] = new int [3][3];
 
-        for(int i = 0; i < 3; i++){
+        for(int i = 1; i <= m; i++){
             int r = sc.nextInt();
             int c = sc.nextInt();
             placed[r][c] = 1;
