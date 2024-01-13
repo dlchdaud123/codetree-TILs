@@ -5,7 +5,7 @@ public class Main {
         String str = sc.next();
         int len = str.length();
 
-        for(int i = 0; i < len; i++){
+        for(int i = 0; i < 20; i++){
             int n = sc.nextInt();
             if(str.length() < n){
                 str = str.substring(0, len-1);
@@ -16,7 +16,10 @@ public class Main {
                 len--;
             }
             System.out.println(str);
+            if(len == 1){
+                break;
+            }
         }
-        System.out.println(str.charAt(0));
+        // System.out.println(str.charAt(0));
     }
 }
