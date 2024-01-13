@@ -7,7 +7,7 @@ public class Main {
 
         for(int i = 0; i < 20; i++){
             int n = sc.nextInt();
-            if(str.length() < n){
+            if(str.length() <= n){
                 str = str.substring(0, len-1);
                 len--;
             }
