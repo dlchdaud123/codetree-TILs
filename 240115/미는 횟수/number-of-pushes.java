@@ -11,10 +11,14 @@ public class Main {
             // System.out.println(str1);
             n++;
             if(str1.equals(str2)){
+                System.out.print(n);
                 break;
             }
+            if(n == str1.length()){
+                System.out.print(-1);
+            }
         }
-        System.out.print(n);
+        
         
 
         
