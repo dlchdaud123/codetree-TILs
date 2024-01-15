@@ -7,7 +7,7 @@ public class Main {
         int n = 0; // 밀어야하는 최솟값
 
         for(int i = 0; i < str1.length(); i++){
-            str1 = str1.substring(1) + str1.substring(0, 1);
+            str1 = str1.charAt(str1.length() - 1) + str1.substring(0, str1.length() - 1);
             // System.out.println(str1);
             n++;
             if(str1.equals(str2)){
@@ -15,7 +15,7 @@ public class Main {
                 break;
             }
             if(n == (str1.length()-1)){
-                System.out.print(-1);
+                System.out.print("-1");
             }
         }
         
