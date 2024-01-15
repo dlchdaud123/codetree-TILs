@@ -8,7 +8,7 @@ public class Main {
     }
     public static void p(int n, int m) {
         int cur = 0;
-        for(int i = 1; i < 100; i++){
+        for(int i = 1; i <= m; i++){
             if(n % i == 0 && m % i == 0){
                 cur = i;
             }
