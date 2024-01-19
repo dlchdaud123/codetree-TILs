@@ -40,7 +40,7 @@ public class Main {
             }
         }
         else if(M <= 7){ // 7월 보다 작거나 같은 달이면 홀수 일때 31일
-            if(D % 2 == 0){ // 짝수 일때
+            if(M % 2 == 0){ // 달이 짝수 일때
                 if(D <= 30){ // 30일 보다 작거나 같아야함
                     return right = true;
                 }
@@ -58,7 +58,7 @@ public class Main {
             }
         }
         else{ // 8월 보다 크거나 같은 달이면 짝수일때 31일
-            if(D % 2 == 1){ // 짝수 일때
+            if(M % 2 == 1){ // 달이 홀수 일때
                 if(D <= 30){ // 30일 보다 작거나 같아야함
                     return right = true;
                 }
@@ -66,7 +66,7 @@ public class Main {
                     return right = false;
                 }
             }
-            else{ // 홀수 일때
+            else{ // 짝수 일때
                 if(D <= 31){ // 31일 보다 작거나 같아야함
                     return right = true;
                 }
