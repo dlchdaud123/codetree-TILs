@@ -18,6 +18,10 @@ public class Main {
         }
 
         for(int i = 0; i < n1_len; i++){
+            if(n1_len < n2_len){ //n2 배열이 더 길다면
+                System.out.print("No");
+                break;
+            }
             if(arr_n1[i] == arr_n2[0]){ // n1 배열이 n2 배열의 첫요소와 같으면
                 cnt = 0;
                 // System.out.println("arr_n1[i] = "+arr_n1[i]);
