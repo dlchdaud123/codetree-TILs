@@ -32,6 +32,9 @@ public class Main {
             if(D <= 28){
                 return right = true;
             }
+            else{
+                return right = false;
+            }
         }
         else if(M <= 7){ // 7월 보다 작거나 같은 달이면 홀수 일때 31일
             if(D % 2 == 0){ // 짝수 일때
