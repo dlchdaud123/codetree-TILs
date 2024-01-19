@@ -9,6 +9,9 @@ public class Main {
             if(day_right(M, D)){
                 System.out.print("Yes");
             }
+            else{
+                System.out.print("No");
+            }
         }
         else{ // M이 13 보다 크거나 같을때 
             System.out.print("No");
