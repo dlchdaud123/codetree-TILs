@@ -37,13 +37,13 @@ public class Main {
                         }
                     }
                 }
+            }
                 if(cnt == n2_len){ // n1,n2 같은 개수가 n2 길이 만큼이면 - > 부분수열
                     break;
                 }
-            if(i == n1_len - 1 && cnt != n2_len){ //i 가 끝까지 돌았는데 cnt는 n2배열의 길이와 같이 않다면
-                System.out.print("No");
-            }
-        }
+                if(i == n1_len-1 && cnt != n2_len){ //i 가 끝까지 돌았는데 cnt는 n2배열의 길이와 같이 않다면
+                    System.out.print("No");
+                }
     }
 }
 }
