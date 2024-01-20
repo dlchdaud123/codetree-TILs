@@ -16,25 +16,26 @@ public class Main {
             }
     }
     public static boolean oddYear(int Y) { // 윤년인지 판단
-        boolean right = false;
         if(Y % 4 != 0){ // 4의 배수가 아니면 윤년이 아님
-            return right = false;
+            return false;
         }
         else if(Y % 100 != 0){ // 4의 배수이지만 100의 배수가 아니면 윤년이 아님
-            return right = false;
+            return true;
         }
         else if(Y % 400 != 0){ //4의 배수고 100의 배수이지만 400의 배수가 아니면 윤년이 아님
-            return right = false;
+            return false;
         }
         else{ //4 배수 100 배수 400 배수 -> 윤년
-            return right = true;
+            return true;
         }
     }
 
     public static boolean lastday(int M, int D, int Y) { // 마지막 일수 판단
         boolean lastday_right = false;
         if(M == 2){
+            // System.out.println("2월 입니다");
             if(oddYear(Y)){ // 윤년이면
+            // System.out.println("윤년입니다");
                 if(D <= 29){
                     return lastday_right = true; // 말일이 맞음
                 }
@@ -43,6 +44,7 @@ public class Main {
                 }
             }
             else{ // 윤년이 아니면
+            // System.out.println("윤년이 아닙니다");
                 if(D <= 28){
                     return lastday_right = true; // 말일이 맞음
                 }
@@ -52,6 +54,7 @@ public class Main {
             }
         }
         else if(M == 4 || M == 6 || M == 9 || M == 11){
+            // System.out.println("4,6,9,11월 입니다");
             if(D <= 30){ // 30일보다 작거나 같으면 
                 return lastday_right = true;
             }
@@ -60,6 +63,7 @@ public class Main {
             }
         }
         else{ // 1, 3, 5, 7, 8, 10, 12 월
+            // System.out.println("1, 3, 5, 7, 8, 10, 12월 입니다");
             if(D <= 31){ // 31일보다 작거나 같으면 
                 return lastday_right = true;
             }
