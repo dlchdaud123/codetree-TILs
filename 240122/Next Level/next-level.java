@@ -5,8 +5,8 @@ class User {
     int lv;
 
     public User(){
-        this.id = "codetree";
-        this.lv = 10;
+        this.id = "";
+        this.lv = 0;
     }
     public User(String id, int lv){
         this.id = id;
@@ -19,16 +19,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String id = "codetree";
-        int lv = 10;
+        User user1 = new User();
+
+        user1.id = "codetree";
+        user1.lv = 10;
+        
+        String id2 = sc.next();
+        int lv2 = sc.nextInt();
 
         User user2 = new User();
-        System.out.println("user "+user2.id+" lv "+user2.lv);
-
-        id = sc.next();
-        lv = sc.nextInt();
-
-        User user1 = new User(id, lv);
+        user2.id = id2;
+        user2.lv = lv2;
+        
         System.out.println("user "+user1.id+" lv "+user1.lv);
+        System.out.println("user "+user2.id+" lv "+user2.lv);
     }
 }
