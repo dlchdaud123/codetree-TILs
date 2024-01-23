@@ -4,10 +4,6 @@ class ProductInf{
     String productName;
     int productCode;
 
-    public ProductInf(){
-        this.productName = "codetree";
-        this.productCode = 50;
-    }
     public ProductInf(String productName, int productCode){
         this.productName = productName;
         this.productCode = productCode;
@@ -18,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        ProductInf productInf1 = new ProductInf();
+        ProductInf productInf1 = new ProductInf("codetree", 50);
         String productName = sc.next();
         int productCode = sc.nextInt();
 
