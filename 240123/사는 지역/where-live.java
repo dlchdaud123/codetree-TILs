@@ -14,15 +14,22 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        char min = 'a';
+        int idx = 0;
         Citizen[] citizen = new Citizen[n];
         for(int i = 0; i < n; i++){
             String name = sc.next();
             String addr = sc.next();
             String city = sc.next();
             citizen[i] = new Citizen(name, addr, city);
+
+            if(name.charAt(0) > min){
+                min = name.charAt(0);
+                idx = i;
+            }
         }
-        System.out.println("name "+citizen[n-1].name);
-        System.out.println("addr "+citizen[n-1].addr);
-        System.out.println("city "+citizen[n-1].city);
+        System.out.println("name "+citizen[idx].name);
+        System.out.println("addr "+citizen[idx].addr);
+        System.out.println("city "+citizen[idx].city);
     }
 }
