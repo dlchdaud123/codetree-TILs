@@ -31,7 +31,7 @@ public class Main {
                 if(a.height != b.height){
                     return a.height - b.height;
                 }
-                return b.weight - a.height;
+                return b.weight - a.weight;
             }
         });
 
