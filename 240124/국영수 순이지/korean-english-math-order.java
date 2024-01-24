@@ -16,17 +16,11 @@ class Score implements Comparable<Score> {
 
     @Override
     public int compareTo(Score score) {
-        if(this.kor == score.kor){ // 국어점수가 같으면
-            if(this.eng == score.eng) // 영어 점수가 같으면
-            return score.math - this.math; // 수학 점수로 내림차순
-            else {
-                return score.eng - this.eng; // 영어점수가 다르면, 영어점수로 내림차순
-            }
-        } 
-        else {
-            return score.kor - this.kor; // 국어점수 다르면, 국어점수로 내림차순
-        }
-        
+        if(this.kor != score.kor) 
+            return score.kor - this.kor;
+        if(this.eng != score.eng) 
+            return score.eng - this.eng;
+        return score.math - this.math;
     }
 };
 
