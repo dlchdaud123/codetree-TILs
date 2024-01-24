@@ -18,7 +18,7 @@ class Student implements Comparable<Student> {
             return student.height - this.height; //키로 정렬
         if(this.weight != student.weight) // 몸무게가 동일하지 않다면
             return student.weight - this.weight; // 몸무게로 정렬
-        return student.number - this.number; // 번호로 정렬
+        return this.number - student.number; // 번호로 정렬
     }
 };
 
