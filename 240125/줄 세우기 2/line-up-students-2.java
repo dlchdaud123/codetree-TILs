@@ -33,7 +33,7 @@ public class Main {
                 if(a.hei != b.hei) // 키가 다르면
                    return a.hei - b.hei; // 키 순서
             // index가 작으면 정렬 했을 때 앞에 와야 합니다.
-                return a.wei - b.wei;
+                return b.wei - a.wei;
             }
             });
 
