@@ -14,10 +14,12 @@ public class Main {
         String str = sc.next();
         String temp = str;
         str = modify(str);
-        if(temp == str){
-            System.out.print("Yes");
+        if(temp.equals(str)){
+            System.out.println("Yes");
         }
         else
-        System.out.print("No");
+        System.out.println("No");
+
+        // System.out.println(str);
     }
 }
