@@ -1,20 +1,19 @@
 import java.util.*;
 public class Main {
     
-    public static final int MAX_N = 100;
-    public static int arr[] = new int[MAX_N + 1];
-    public static int cnt;
+    public static int arr[] = new int[100];
 
-    public static int sumFunc() {
+
+    public static int sumFunc(int m) {
         int sum = 0;
-        while(cnt >= 1) {
-            // System.out.println(cnt);
-            sum += arr[cnt];
-            if(cnt % 2 == 1){
-                cnt -= 1;
+        while(m >= 1) {
+            // System.out.println(m);
+            sum += arr[m];
+            if(m % 2 == 1){
+                m -= 1;
             }
             else {
-                cnt /= 2;
+                m /= 2;
             }
         }
         return sum;
@@ -27,8 +26,7 @@ public class Main {
         for(int i = 1; i <= n; i++) {
             arr[i] = sc.nextInt();
         }
-        cnt = m;
-        System.out.print(sumFunc());
+        System.out.print(sumFunc(m));
 
     }
 }
