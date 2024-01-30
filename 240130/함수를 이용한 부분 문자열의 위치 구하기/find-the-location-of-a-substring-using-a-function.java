@@ -25,8 +25,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        String strPart = sc.next();
+        str = sc.next();
+        strPart = sc.next();
         int ans;
         ans = part(str, strPart);
         System.out.println(ans);
