@@ -10,17 +10,22 @@ public class Main {
         int dayA = sc.nextInt();
         int hourB = sc.nextInt();
         int minC = sc.nextInt();
-        int elapsedMin = -1;
+        int elapsedMin = 0;
 
         while(true) {
             if(11 == dayA && 11 > hourB && 11 > minC){
+                elapsedMin--;
                 break;
             }
             if(11 == dayA && 11 > hourB){
+                elapsedMin--;
                 break;
             }
-            if(day == dayA && hour == hourB && min == minC)
+            if(day == dayA && hour == hourB && min == minC){
+                // elapsedMin++;
                 break;
+            }
+                
             elapsedMin++;
             min++;
 
@@ -34,10 +39,10 @@ public class Main {
             }
         }
         if(elapsedMin == -1){
-            System.out.print(elapsedMin);
+            System.out.print(-1);
         }
         else{
-            System.out.print(elapsedMin+1);
+            System.out.print(elapsedMin);
         }
         
     }
