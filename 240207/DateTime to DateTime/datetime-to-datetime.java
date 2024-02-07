@@ -7,43 +7,16 @@ public class Main {
         int hour = 11;
         int min = 11;
 
-        int dayA = sc.nextInt();
-        int hourB = sc.nextInt();
-        int minC = sc.nextInt();
-        int elapsedMin = 0;
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        
+        int diff = (A * 24 * 60 + B * 60 + C) - (11 * 24 * 60 + 11 * 60 + 11);
 
-        while(true) {
-            if(11 == dayA && 11 > hourB && 11 > minC){
-                elapsedMin--;
-                break;
-            }
-            if(11 == dayA && 11 > hourB){
-                elapsedMin--;
-                break;
-            }
-            if(day == dayA && hour == hourB && min == minC){
-                // elapsedMin++;
-                break;
-            }
-                
-            elapsedMin++;
-            min++;
-
-            if(min > 59){
-                hour++;
-                min = 0;
-            }
-            if(hour > 23){
-                day++;
-                hour = 0;
-            }
-        }
-        if(elapsedMin == -1){
+        if(diff < 0){
             System.out.print(-1);
         }
-        else{
-            System.out.print(elapsedMin);
-        }
-        
+        else
+            System.out.print(diff);
     }
 }
