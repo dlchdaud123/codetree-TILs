@@ -13,7 +13,10 @@ public class Main {
         int elapsedMin = -1;
 
         while(true) {
-            if(11 > hourB || 11 > minC){
+            if(11 > hourB && 11 > minC){
+                break;
+            }
+            if(11 > hourB){
                 break;
             }
             if(day == dayA && hour == hourB && min == minC)
