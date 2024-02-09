@@ -8,12 +8,12 @@ public class Main {
         int cnt = 0;
 
         while(true){
-            if(n < 4){
+            if(n < B){
                 arr[cnt++] = n;
                 break;
             }
-            arr[cnt++] = n % 4;
-            n = n / 4;
+            arr[cnt++] = n % B;
+            n = n / B;
         }
 
         for(int i = cnt - 1; i >= 0; i--) {
