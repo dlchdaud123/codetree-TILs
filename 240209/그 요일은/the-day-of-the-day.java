@@ -31,7 +31,8 @@ public class Main {
                 idx = i;
             }
         }
-        // System.out.print(diff);
-        System.out.print((diff+5)/7);
+        // System.out.println(diff);
+        // System.out.println(idx);
+        System.out.println((diff) / 7);
     }
 }
