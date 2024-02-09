@@ -10,9 +10,9 @@ public class Main {
         int d2 = sc.nextInt();
         String A = sc.next();
         int idx = 0;
-
         int m1Days = 0;
         int m2Days = 0;
+        int cntA = 0;
 
         for(int i = 1; i < m1; i++){
             m1Days = m1Days + month[i];
@@ -33,9 +33,14 @@ public class Main {
         }
         // System.out.println(diff);
         // System.out.println(idx);
-        if((m2Days - m1Days) >= idx)
-        System.out.println(((diff) / 7) + 1);
-        else
-        System.out.println(((diff) / 7));
+
+
+        cntA = cntA + ((diff) / 7);
+
+        // n주(7*n일)은 아니지만 A가 n번 나오는 경우
+        if(diff % 7 >= idx){
+            cntA++;
+        }
+        System.out.println(cntA);
     }
 }
