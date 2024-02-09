@@ -33,6 +33,9 @@ public class Main {
         }
         // System.out.println(diff);
         // System.out.println(idx);
-        System.out.println((diff) / 7);
+        if((m2Days - m1Days) >= idx)
+        System.out.println(((diff) / 7) + 1);
+        else
+        System.out.println(((diff) / 7));
     }
 }
