@@ -44,10 +44,10 @@ public class Main {
             }
         }
 
-        System.out.println(xMax+" "+yMax+" "+xMin+" "+yMin);
+        // System.out.println(xMax+" "+yMax+" "+xMin+" "+yMin);
 
-        for(int i = xMin; i < xMax; i++){
-            for(int j = yMin; j < yMax; j++){
+        for(int i = xMin; i <= xMax; i++){
+            for(int j = yMin; j <= yMax; j++){
                 cnt++;
             }
         }
