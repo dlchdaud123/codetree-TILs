@@ -14,7 +14,7 @@ public class Main {
         // 만약 i == 0 || arr[i] != arr[i-1] 이라면 cnt++
         for(int i = 1; i < n; i++){
             if(arr[i] != arr[i-1]){
-                cnt = 0;
+                cnt = 1;
             }
             else{
                 cnt++;
@@ -23,6 +23,6 @@ public class Main {
                 }
             }
         }
-        System.out.println(max+1);
+        System.out.println(max);
     }
 }
