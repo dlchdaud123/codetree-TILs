@@ -5,7 +5,7 @@ public class Main {
         int n = sc.nextInt();
         int[] arr = new int[n];
         int cnt = 1;
-        int max = 0;
+        int max = 1;
 
         // n번의 숫자를 배열에 할당
         for(int i = 0; i < n; i++){
