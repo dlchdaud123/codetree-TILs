@@ -39,8 +39,8 @@ public class Main {
 
         int change = 0;
         int curr = 0;
-        int[] diff = new int[totalTime];
-        for(int i = 1; i < totalTime; i++){
+        Integer[] diff = new Integer[totalTime];
+        for(int i = 0; i < totalTime; i++){
             diff[i] = (arrA[i] - arrB[i]);
             // System.out.println(diff[i]);
             if(diff[i] * curr < 0){
