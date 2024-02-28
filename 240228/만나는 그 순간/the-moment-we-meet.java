@@ -45,11 +45,19 @@ public class Main {
         // for(int i = 0; i < 1000; i++){
         //     System.out.println(arrA[i]+" "+arrB[i]);
         // }
-        for(int i = 1; i < 1000; i++){
+        int len = 0;
+        if(n > m){
+            len = m;
+        }
+        else{
+            len = n;
+        }
+        for(int i = 1; i < len; i++){
             if(arrA[i] == arrB[i]){
                 System.out.print(i);
                 return;
             }
         }
+        return -1;
     }
 }
