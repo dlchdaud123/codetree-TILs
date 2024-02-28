@@ -37,8 +37,8 @@ public class Main {
         //     System.out.println(arrA[i] + " " + arrB[i]);
         // }
 
-        int change = 0;
-        int curr = 0;
+        Integer change = 0;
+        Integer curr = 0;
         Integer[] diff = new Integer[totalTime];
         for(int i = 0; i < totalTime; i++){
             diff[i] = (arrA[i] - arrB[i]);
