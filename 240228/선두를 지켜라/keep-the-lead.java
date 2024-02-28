@@ -7,7 +7,7 @@ public class Main {
         int m = sc.nextInt();
         int[] arrA = new int[1000000];
         int[] arrB = new int[1000000];
-        int totalTime = 0;
+        Integer totalTime = 0;
         int cnt = 0;
         // A의 이동
         for(int i = 0; i < n; i++){
