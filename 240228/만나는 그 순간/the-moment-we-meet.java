@@ -5,8 +5,8 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        int[] arrA = new int[1000];
-        int[] arrB = new int[1000];
+        int[] arrA = new int[10000000];
+        int[] arrB = new int[10000000];
         int totalTime = 0;
         int cnt = 0;
 
