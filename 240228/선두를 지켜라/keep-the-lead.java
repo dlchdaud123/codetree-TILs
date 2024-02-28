@@ -43,8 +43,15 @@ public class Main {
         for(int i = 0; i < totalTime; i++){
             diff[i] = (arrA[i] - arrB[i]);
             // System.out.println(diff[i]);
-            if(diff[i] * curr < 0){
-                change++;
+            if(diff[i] < 0){
+                if(-1 * curr < 0){
+                    change++;
+                }
+            }
+            else if(diff[i] > 0){
+                if(1 * curr < 0){
+                    change++;
+                }
             }
             if(diff[i] != 0){
                 curr = diff[i];
