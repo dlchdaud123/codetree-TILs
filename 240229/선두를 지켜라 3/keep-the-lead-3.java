@@ -8,20 +8,23 @@ public class Main {
         int[] arrB = new int[1000000];
         int timeA = 0;
         int timeB = 0;
+        int totalLen = 0;
 
         for(int i = 0; i < n; i++){
             int v = sc.nextInt();
             int t = sc.nextInt();
             for(int j = 0; j < t; j++){
-                arrA[timeA++] += v;
+                totalLen += v;
+                arrA[timeA++] += totalLen;
             }
         }
-
+        totalLen = 0;
         for(int i = 0; i < m; i++){
             int v = sc.nextInt();
             int t = sc.nextInt();
             for(int j = 0; j < t; j++){
-                arrB[timeB++] += v;
+                totalLen += v;
+                arrB[timeB++] += totalLen;
             }
         }
         
@@ -43,6 +46,9 @@ public class Main {
                 winRec[i] = 3;
             }
         }
+        // for(int i = 0; i < timeA; i++){
+        //     System.out.println(arrA[i]+" "+arrB[i]);
+        // }
         int cnt = 1;
         for(int i = 1; i < timeA; i++){
             if(winRec[i] != winRec[i-1]){
