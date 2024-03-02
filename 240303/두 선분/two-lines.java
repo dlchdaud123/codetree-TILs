@@ -10,18 +10,18 @@ public class Main {
         int x2 = sc.nextInt();
         int x3 = sc.nextInt();
         int x4 = sc.nextInt();
-
-        for(int i = x1; i <= x2; i++){
-            arr1[i] = 1;
+        
+        if(x2 < x3){
+            System.out.print("nonintersecting");
+        }
+        else if(x4 < x1){
+            System.out.print("nonintersecting");
+        }
+        else{
+            System.out.print("intersecting");
         }
         
-        for(int i = x3; i <= x4; i++){
-            if(arr1[i] == 1){
-                System.out.print("intersecting");
-                return;
-            }
-            arr2[i] = 1;
-        }
-        System.out.print("nonintersecting");
+        // System.out.print("intersecting");
+        // System.out.print("nonintersecting");
     }
 }
