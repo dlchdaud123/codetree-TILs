@@ -21,7 +21,7 @@ public class Main {
             }
             else{
                 for(int j = 0; j < time; j++){
-                    arr1[nCurrIdx++] = nCurr++; 
+                    arr1[nCurrIdx++] = nCurr++;
                 }
             }
         }
@@ -40,6 +40,13 @@ public class Main {
                 }
             }
         }
+        for(int i = nCurrIdx; i < 100000; i++){
+            arr1[i] = arr1[i -1];
+        }
+        for(int i = mCurrIdx; i < 100000; i++){
+            arr2[i] = arr2[i-1];
+        }
+
         int meetCnt = 0;
         if(mCurrIdx > nCurrIdx){
             for(int i = 0; i < mCurrIdx; i++){
