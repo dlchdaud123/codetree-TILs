@@ -4,8 +4,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int arr1[] = new int[1000000];
-        int arr2[] = new int[1000000];
+        int arr1[] = new int[10000000];
+        int arr2[] = new int[10000000];
         int nCurr = 0;
         int mCurr = 0;
         int nCurrIdx = 0;
