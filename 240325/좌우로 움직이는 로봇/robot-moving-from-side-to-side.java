@@ -40,10 +40,10 @@ public class Main {
                 }
             }
         }
-        for(int i = nCurrIdx; i < 100000; i++){
+        for(int i = nCurrIdx; i < nCurrIdx+mCurrIdx; i++){
             arr1[i] = arr1[i -1];
         }
-        for(int i = mCurrIdx; i < 100000; i++){
+        for(int i = mCurrIdx; i < nCurrIdx+mCurrIdx; i++){
             arr2[i] = arr2[i-1];
         }
 
