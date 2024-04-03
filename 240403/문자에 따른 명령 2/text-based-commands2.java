@@ -20,10 +20,10 @@ public class Main {
                 dirNum = (dirNum + 1) % 4;
             }
             else { // 바라보고 있는 칸으로 이동
-                nx = x + dx[dirNum];
-                ny = y + dy[dirNum];
+                x = x + dx[dirNum];
+                y = y + dy[dirNum];
             }
         }
-        System.out.println(nx + " "+ ny);
+        System.out.println(x + " "+ y);
     }
 }
