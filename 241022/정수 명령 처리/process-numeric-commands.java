@@ -29,7 +29,7 @@ public class Main {
                 }
             }
             else if(s.equals("top")){
-                stack.peek();
+                System.out.println(stack.peek());
             }
         }
     }
