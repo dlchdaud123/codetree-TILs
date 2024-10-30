@@ -9,14 +9,14 @@ public class Main {
         int n = sc.nextInt();
 
         for(int i = 0; i < n; i++){
-            dq.addFirst(i);
+            dq.addLast(i);
         }
 
         while(dq.size() == 1){
             dq.pollFirst();
-            dq.addFirst(dq.peekLast());
-            dq.pollLast();
+            dq.addLast(dq.peekFirst());
+            dq.pollFirst();
         }
-        System.out.println(dq.pollFirst());
+        System.out.println(dq.peekLast());
     }
 }
